@@ -1,0 +1,118 @@
+<div class="top-contents" id="top">
+  <div class="center-wrapper">
+    <h2>Masaki Yamamura<br>Portfolio</h2>
+    <p class="main-synopsis">I paint objects as I think them, not as I see them.</p>
+  </div>
+  <div class="font-rotate">
+    <p class="rotate-text">He who moves not forward, goes backward.</p>
+  </div>
+</div>
+
+<div class="mybooks-contents" id="mybooks">
+  <div class="section-title">
+    <h3>Read Books</h3>
+  </div>
+  <div class="books-box">
+    <% @posts.each do |post|%>
+      <div class="books">
+        <%= image_tag "#{post.image}",class: "photo-book" %>
+        <p><%= post.text %></p>
+      </div>
+    <% end %>
+  </div>
+  <div class="more-area">
+    <a class="more-button" href="/show">
+      <span>view more...</span>
+    </a>
+  </div>
+</div>
+<div class="hobbies-contents" id="hobbies">
+  <div class="section-title">
+    <h3>My Hobbies</h3>
+  </div>
+  <div class="hobbies-area">
+    <div class="hobby">
+      <picture class="img-box">
+        <source media="(max-width:760px)" srcset="assets/wine.png">
+        <img class="hobby-picture" src="assets/wine.png">
+      </picture>
+      <div class="hobby-text">
+        <div class="hobby-title">
+          <p>ワイン</p>
+        </div>
+        <div class="hobby-synopsis">
+          <p class="start-date">2019-5 ~ </p>
+          <p>今年の五月に入ってからワインにハマっています。<br>
+          長野県のワイナリーに行ったり、ワインの奥深さに魅了されました。<br>
+          ワイン好きな方は一緒に飲みに行きましょう!</p>
+        </div>
+      </div>
+    </div>
+    <div class="hobby">
+      <picture class="img-box">
+        <source media="(max-width:760px)" srcset="assets/books.png">
+        <img class="hobby-picture" src="assets/books.png">
+      </picture>
+      <div class="hobby-text">
+        <div class="hobby-title">
+          <p>読書</p>
+        </div>
+        <div class="hobby-synopsis">
+          <p class="start-date">2018-1 ~</p>
+          <p>元々学生の頃から小説は読んでいましたが、趣味と言えるものではありませんでした。<br>
+          しかし、20歳を機にビジネス書を読むようになり、今では1年で100冊以上読んでいるかと思います。</p>
+        </div>
+      </div>
+    </div>
+    <div class="hobby">
+      <picture class="img-box">
+        <source media="(max-width:760px)" srcset="assets/movie1.png">
+        <img class="hobby-picture" src="assets/movie1.png">
+      </picture>
+      <div class="hobby-text">
+        <div class="hobby-title">
+          <p>動画・アニメ鑑賞</p>
+        </div>
+        <div class="hobby-synopsis">
+          <p class="start-date">2015-1 ~</p>
+          <p>昔から映画やアニメ鑑賞にハマっています。<br>昔から世界遺産の建物や自然に興味があり、
+          それに影響されて背景美術のきれいな作品にハマりやすいです。<br>好きな作品：「ミッドナイト・イン・パリ」「言の葉の庭」「詩季織々」等</p>
+        </div>
+      </div>
+    </div>
+    <div class="hobby">
+      <picture class="img-box">
+        <source media="(max-width:760px)" srcset="assets/artmusium.png">
+        <img class="hobby-picture" src="assets/artmusium.png">
+      </picture>
+      <div class="hobby-text">
+        <div class="hobby-title">
+          <p>美術鑑賞</p>
+        </div>
+        <div class="hobby-synopsis">
+          <p class="start-date">2018-11 ~</p>
+          <p>2018年に一度上京を経験した際、東京都美術館に「ムンク展」を観に行きました。<br>
+          その時に今まで感じたことのない感覚に囚われ、芸術に魅了されました。<br>以降は最低でも月に1,2回は美術館を訪れています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-contents" id="contact">
+  <div class="section-title">
+    <h3>Contact</h3>
+  </div>
+  <div class="contact-box">
+    <div class="contact-text">
+      <p>下記のSNSにて、気軽にお声がけください！DM等お待ちしております！</p>
+    </div>
+    <div class="contact-icon">
+      <a class="twitter-icon common-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="facebook-icon common-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+  </div>
+</div>

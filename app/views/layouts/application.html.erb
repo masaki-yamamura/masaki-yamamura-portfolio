@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/df6ad7da77.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+  <header class="category-header">
+    <div class="header-container">
+      <div class="container-middle">
+        <div class="portfolio-logo">
+          <a href="/"><h2 class="main-logo">Portfolio</h2></a>
+        </div>
+        <div class="nav-toggle headC">
+          <i class="fas fa-bars" class="menu-bar"></i>
+        </div>
+      </div>
+      
+      <div class="header-list">
+        <ul class="lists">
+          <a href="/" class="list-anker">
+          <li class="list">Top</li>
+          </a>
+          <a href="#mybooks" class="list-anker">
+          <li class="list">Read Books</li>
+          </a>
+          <a href="#hobbies" class="list-anker">
+          <li class="list">Hobbies</li>
+          </a>
+          <a href="#contact" class="list-anker">
+          <li class="list">Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <nav class="global-nav" id="nav-none">
+    <ul class="lists">
+      <a href="#top" class="list-anker">
+      <li class="list">Top</li>
+      </a>
+      <a href="#mybooks" class="list-anker">
+      <li class="list">Read Books</li>
+      </a>
+      <a href="#Hobbies" class="list-anker">
+      <li class="list">Hobbies</li>
+      </a>
+      <a href="#contact" class="list-anker">
+      <li class="list">Contact</li>
+      </a>
+    </ul>
+  </nav>
+    <%= yield %>
+  <footer class="footer">
+    <div class="footer-box">
+      <span>©Masaki Yamamura Portfolio 2019</span>
+    </div>
+  </footer>
+  </body>
+</html>
