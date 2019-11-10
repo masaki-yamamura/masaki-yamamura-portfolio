@@ -16,17 +16,21 @@
   position: fixed;
   z-index: 10;
   background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     .container-middle {
       .portfolio-logo {
 
         .main-logo {
-        font-size:2.4rem;
+        font-size:2.2rem;
         color: #333333;
         }
       }
@@ -394,6 +398,12 @@
 // }
 
 @media screen and (max-width: 414px) {
+  .category-header {
+    height: 50px;
+    background-color: inherit;
+    border-bottom: 1px solid #333;
+  }
+
   .top-contents {
     padding: 0 10px;
 
@@ -426,7 +436,7 @@
       .hobby {
         padding: 40px 10px 0;
         height: 100vh;
-        
+
         .img-box {
 
           .hobby-picture {
